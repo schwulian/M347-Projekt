@@ -1,4 +1,12 @@
-#  Docker-Compoose-Projekt 🐱‍🏍
+#  Filmhub 🐱‍🏍
+
+#Geschäftslogik
+>Obj. Film:
+>Titel
+>Regisseur
+>Runtime
+>rating
+
 
 # 🛠️ Technologien
 <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21~bgwhite.svg"  width="auto" height="50"/>
