@@ -6,4 +6,4 @@ ENV POSTGRES_PASSWORD=julianHagel
 
 COPY init.sql /docker-entrypoint-initdb.d/
 
-EXPOSE 8089
+EXPOSE 5432
