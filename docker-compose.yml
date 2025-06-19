@@ -1,11 +1,14 @@
-version: '3.8'
-
 services:
   db:
     build:
       context: db
       dockerfile: Dockerfile
     healthcheck:
-      test: ["CMD", "pg_isready -U postgres -d julianHagel || exit 1" ]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres || exit 1" ]
+      # muss vielleicht script dafür machen, da ich nur checke ob es healthy ist, aber ich nichts mit dem status mache.
+      # generisches script würde healthcheck  für jeden container abdecken.
+      # + Einheitlich
+      # + Modular
+      # - sehr versweatet, aber cold
 
 
