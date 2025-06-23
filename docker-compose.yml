@@ -3,12 +3,21 @@ services:
     build:
       context: db
       dockerfile: Dockerfile
+    environment:
+      POSTGRES_DB: myKino
+      POSTGRES_USER: silvan
+      POSTGRES_PASSWORD: julianHagel
+    ports:
+      - 5431:5432
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres || exit 1" ]
-      # muss vielleicht script dafür machen, da ich nur checke ob es healthy ist, aber ich nichts mit dem status mache.
-      # generisches script würde healthcheck  für jeden container abdecken.
-      # + Einheitlich
-      # + Modular
-      # - sehr versweatet, aber cold
+      test: ["CMD-SHELL", "pg_isready -U silvan -d myKino || exit 1" ]
+      start_period: 10s
+      interval: 30s
+      timeout: 40s
+      retries: 2
 
+
+
+      #depends_on
+        #condition: service-healthy
 
