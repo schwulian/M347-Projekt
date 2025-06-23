@@ -5,7 +5,7 @@ CREATE TABLE films (
     regiseur VARCHAR(255) NOT NULL
 );
 
-INSERT INTO films (id, title, duration, regiseur) VALUES
+INSERT INTO films (title, duration, regiseur) VALUES
     ('Inception', 148, 'Christopher Nolan'),
     ('The Godfather', 175, 'Francis Ford Coppola'),
     ('Minions', 182, 'Gru der Wahre');
