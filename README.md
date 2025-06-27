@@ -23,7 +23,7 @@
 
 <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker" height="50"/>
 
-<img src="https://www.vectorlogo.zone/logos/githubactions/githubactions-ar21.svg" alt="GitHub Actions" height="50"/>
+<img src="[https://www.vectorlogo.zone/logos/githubactions/githubactions-ar21.svg](https://medium.com/@albertorojasm95/starter-github-actions-workflows-for-kubernetes-77ed41071ec5)" alt="GitHub Actions" height="50"/>
 
 
 ## Frontend
