@@ -19,7 +19,7 @@
 -
 
 
-## 📦 Frontend
+## Frontend
 ### Technologien
     - React + Vite
     - Bootstrap
@@ -28,12 +28,15 @@
 ### Thema
     Film Applikation with CRUD. Add new Movies. Read Movies from Startsite
 
-## 📃Backend
-> Backlog grooming
-## DB
+## Backend
+
+
+
+
+## DB - Stefan
 >Test
 
 
-## ✅ Docker
+## Docker - Stefan
 -
 
