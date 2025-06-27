@@ -26,22 +26,27 @@
 <img src="https://medium.com/@albertorojasm95/starter-github-actions-workflows-for-kubernetes-77ed41071ec5" alt="GitHub Actions" height="50"/>
 
 
-## Frontend
+## Frontend - Silvan
 ### Technologien
     - React + Vite
     - Bootstrap
     - NPM
 
 
-## Backend
+## Backend - Julian ☕
+    - Springboot 🌱
+    - Gradle (leider)
+    - Very basic Spring actuator
+    - connection to Stefans Postgres DB
+#Endpoints
+/api                      - Controller
+/api/films                - für getAll und post
+/api/films/{filmId}       - für getById und Delete
+    
 
 
+## DB🐘 - Stefan
 
 
-## DB - Stefan
->Test
-
-
-## Docker - Stefan
--
+## Docker - Stefan 🐳🐳🐳🐳🐳
 
