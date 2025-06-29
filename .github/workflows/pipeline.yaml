@@ -23,11 +23,11 @@ jobs:
           echo "POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}" >> .env
 
       - name: Start Docker Compose
-        run: docker-compose up --build -d
+        run: docker compose up --build -d
 
       - name: Wait for services to be healthy
         run: |
-          docker-compose ps
+          docker compose ps
 
       - name: Shutdown Docker Compose
-        run: docker-compose down
+        run: docker compose down
