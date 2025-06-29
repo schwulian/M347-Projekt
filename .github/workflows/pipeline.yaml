@@ -1,5 +1,4 @@
 name: Continuous Integration
-
 on:
   push:
     branches: [ "master" ]
@@ -11,3 +10,13 @@ jobs:
     steps:
       - name: Check out ch.bbw.M347.repository
         uses: actions/checkout@v4
+      
+      - name: Build and start Docker Compose
+        run: docker-compose up -d --build
+      
+      - name: Wait for services to be ready
+        run: sleep 30
+      
+      - name: Stop Docker Compose
+        if: always()
+        run: docker-compose down
